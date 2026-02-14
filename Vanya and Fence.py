@@ -1,10 +1,13 @@
-n, h = map(int,int)
-heights = list(map(int, input().split()))
+n, h = map(int, raw_input().split())
+heights = map(int, raw_input().split())
+
 total_width = 0
+
 for a in heights:
     if a > h:
-        total_width += 2  
+        total_width += 2
     else:
         total_width += 1
 
-print(total_width)
+
+print total_width
